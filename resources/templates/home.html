@@ -6,5 +6,11 @@ Hello, {{name}}!
 <form action="logout" method="post">
     <button type="submit">Logout</button>
 </form>
+
+<ol>
+{{#users}}
+<li>{{name}}</li>
+{{/users}}
+</ol>
 </body>
 </html>
