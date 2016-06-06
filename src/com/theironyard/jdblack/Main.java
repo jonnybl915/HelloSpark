@@ -35,5 +35,13 @@ public class Main {
                     return ""; //doesn't have any effect but this is necessary to satisfy the
                 }
         );
+        Spark.post(
+          "/logout",
+                (request, response) -> {
+                    user = null;
+                    response.redirect("/");
+                    return "";
+                }
+        );
     }
 }
